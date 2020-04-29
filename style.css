@@ -19,8 +19,8 @@ body {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  color: rgb(67, 207, 67);
-  text-shadow: 2px 2px 1px white;
+  color: rgb(35, 153, 221);
+  text-shadow: 5px 5px 1px rgb(182, 218, 53);
 }
 
 /* background overlay */
@@ -37,4 +37,87 @@ body::after {
 /* bring forth texts and countdown */
 body * {
   z-index: 1;
+}
+
+h1 {
+  font-size: 60px;
+  margin: -80px 0 40px;
+  text-align: center;
+}
+
+.countdown {
+  display: none;
+  transform: scale(2);
+}
+
+.time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+  text-shadow: 1px 1px 1px rgb(182, 218, 53);
+}
+
+.time h2 {
+  margin: 0 0 5px;
+}
+
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 45px;
+  }
+
+  .time {
+    margin: 5px;
+  }
+
+  .time h2 {
+    font-size: 12px;
+    margin: 0;
+  }
+
+  small {
+    font-size: 10px;
+  }
+
+  .author,
+  .photo-credits {
+    font-size: 12px;
+  }
+
+  .author a {
+    font-size: 16px;
+  }
+
+  .photo-credits a {
+    font-size: 16px;
+  }
+}
+
+.author {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  text-shadow: none;
+}
+
+.author span {
+  font-size: 1.1rem;
+  color: rgb(69, 224, 48);
+}
+
+.photo-credits {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  text-shadow: none;
+}
+
+.photo-credits a {
+  color: purple;
+  text-shadow: none;
+  font-size: 1.1rem;
+  text-decoration: none;
 }
