@@ -10,7 +10,7 @@ body {
   padding: 0;
   height: 100vh;
   width: 100vw;
-  background: url(./img/RickAndMortyBG.png);
+  background: url(/img/bg2.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
