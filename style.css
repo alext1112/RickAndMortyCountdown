@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Creepster&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Creepster', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  background: url(./img/RickAndMortyBG.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: rgb(67, 207, 67);
+  text-shadow: 2px 2px 1px white;
+}
+
+/* background overlay */
+body::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* bring forth texts and countdown */
+body * {
+  z-index: 1;
+}
